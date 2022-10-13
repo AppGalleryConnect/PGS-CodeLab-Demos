@@ -19,21 +19,35 @@
 Windows 7/10的台式机或笔记本电脑、Cocos Creator游戏开发引擎。
 
 ##快速入门
+
+   
    1、检查Cocos Creator游戏开发引擎是否已准备好。
+   
    2、注册【华为帐号】（https://developer.huawei.com/consumer/cn/）。
+   
    3、创建应用，并在AppGallery Connect中配置应用信息。
+   
    详细内容请参见：[HUAWEI QuickGame Development Preparation](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-create-quickgame-0000001159652387)
+   
    4.开通华为帐号服务和游戏服务，在AppGallery Connect控制台打开相关服务开关。
+   
    详细内容参见：[开通服务](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-enable-game-kit-0000001113292730)
+   
    5.生成指纹证书并在AppGallery Connect上证书指纹。
+   
    详细内容参见：[生成、配置证书指纹](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-generate-fingerprint-0000001113452452)
+   
    6、配置示例代码：
+   
    (1)在AGC上获取appid放到项目根目录Scipt/Global.ts里对应位置上。
+   
    (2)将示例工程使用Cocos Creator打开，点击项目->构建发布->构建->运行。其中构建需要填写正式的证书指纹。
+   
    7.连上手机运行示例。
 
 ## 配置
 使用示例代码提供的功能之前，你需要在AppGallery Connect上配置您的应用信息。
+
 详细内容参见：[生成、配置证书指纹](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-generate-fingerprint-0000001113452452)
 
 

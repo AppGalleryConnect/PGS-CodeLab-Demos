@@ -19,15 +19,25 @@
 Windows 7/10的台式机或笔记本电脑、Cocos Creator游戏开发引擎。
 
 ##快速入门
+
    1、检查Cocos Creator游戏开发引擎是否已准备好。
+   
    2、注册【华为帐号】（https://developer.huawei.com/consumer/cn/）。
+   
    3、创建应用，并在AppGallery Connect中配置应用信息。
+   
    详细内容请参见：[HUAWEI GameOBE Development Preparation](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-getstarted-0000001180623048)
+   
    4.开通联机对战服务。
+   
    详细内容参见：[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-enable-0000001275939250)
+   
    5、配置示例代码：
+   
    (1)在AGC上获取appid，clientId，clientSecret放到项目根目录Scipt/Global.ts里对应位置上。
+   
    (2)将示例工程使用Cocos Creator打开，在引擎中上方区域选择浏览器，点击运行。
+   
    6.在浏览器中运行示例demo。
 
 ## 技术支持
