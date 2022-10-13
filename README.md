@@ -1,5 +1,11 @@
 # PGS-CodeLab-Demos
 ***
+## Introduction
+These are the available plugins in this repository.
+
+| Demo | Version | Documentation |
+|--------|-----|-----|
+| [GameAnalytics](./GameAnalytics) | [![version](https://img.shields.io/badge/Release-1.1.1.300-yellow)](./GameAnalytics) | [Getting Started](To be update by developer docs link) <br/> [API Reference](To be update by developer  api docs link) |
 ## Precautions
 The PGS-CodeLab-Demos project contains 4 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
 
