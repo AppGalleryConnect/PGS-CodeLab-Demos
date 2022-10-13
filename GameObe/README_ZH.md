@@ -22,9 +22,9 @@ Windows 7/10的台式机或笔记本电脑、Cocos Creator游戏开发引擎。
    1、检查Cocos Creator游戏开发引擎是否已准备好。
    2、注册【华为帐号】（https://developer.huawei.com/consumer/cn/）。
    3、创建应用，并在AppGallery Connect中配置应用信息。
-   详细内容请参见：[HUAWEI QuickGame Development Preparation](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-create-quickgame-0000001159652387)
+   详细内容请参见：[HUAWEI GameOBE Development Preparation](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-getstarted-0000001180623048)
    4.开通联机对战服务。
-   详细内容参见：[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-runtime-gameobe-service-0000001231604580)
+   详细内容参见：[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-enable-0000001275939250)
    5、配置示例代码：
    (1)在AGC上获取appid，clientId，clientSecret放到项目根目录Scipt/Global.ts里对应位置上。
    (2)将示例工程使用Cocos Creator打开，在引擎中上方区域选择浏览器，点击运行。
@@ -41,5 +41,5 @@ Windows 7/10的台式机或笔记本电脑、Cocos Creator游戏开发引擎。
   Demo示例代码遵循以下开源协议: [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
   更多SDK开发指南，请点击以下链接：
-  [Devlopment Guide](https://developer.huawei.com/consumer/cn/doc/development/quickApp-Guides/quickgame-dev-quickgame-introduction-0000001112670380)
-  [API](https://developer.huawei.com/consumer/cn/doc/development/quickApp-References/quickgame-api-canvas-0000001083746126)
+  [Devlopment Guide](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-introduction-0000001185429290)
+  [API](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/gameobe-overview-js-0000001237750607)
