@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/left_text_color"
+            android:textStyle="bold"
+            android:text="@string/player_openId"/>
+        <EditText
+            android:id="@+id/openIdEt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:hint="@string/openIdHint"
+            android:textSize="14sp"
+            android:textColor="@color/input_text_color"
+            android:textColorHint="@color/input_text_color"
+            android:textStyle="bold"
+            android:paddingHorizontal="15dp"
+            android:inputType="text"
+            android:background="@mipmap/edit_text_bg"
+            android:gravity="center_vertical"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/left_text_color"
+            android:textStyle="bold"
+            android:text="@string/room_id"/>
+
+        <EditText
+            android:id="@+id/roomIdEt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:hint="@string/roomIdHint"
+            android:textSize="14sp"
+            android:textColor="@color/input_text_color"
+            android:textColorHint="@color/input_text_color"
+            android:textStyle="bold"
+            android:paddingHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:inputType="text"
+            android:autofillHints=""
+            android:gravity="center_vertical"
+            android:background="@mipmap/edit_text_bg"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/initTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@mipmap/btn_gmme_bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/initGMMESdk"/>
+
+        <Button
+            android:id="@+id/createRoomTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@mipmap/btn_gmme_bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            android:text="@string/create_room" />
+
+        <Button
+            android:id="@+id/joinRoomTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@mipmap/btn_gmme_bg"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/join_room" />
+    </LinearLayout>
+
+</LinearLayout>
