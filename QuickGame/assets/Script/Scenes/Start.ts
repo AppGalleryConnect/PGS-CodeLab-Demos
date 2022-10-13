@@ -24,7 +24,7 @@ export default class Start extends cc.Component {
     this.gamelogin();
   }
   goToGame() {
-    cc.director.loadScene('Hall');
+    cc.director.loadScene('Game');
   }
 
   gamelogin() {

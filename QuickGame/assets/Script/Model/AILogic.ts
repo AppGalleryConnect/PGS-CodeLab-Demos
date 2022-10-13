@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-import Game from '../Scenes/Game1';
+import Game from '../Scenes/Game';
 import Player from './Player';
 
 const { ccclass, property } = cc._decorator;

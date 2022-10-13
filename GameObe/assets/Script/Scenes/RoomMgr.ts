@@ -81,7 +81,7 @@ export default class RoomMgr extends cc.Component {
     Global.room.onStartFrameSync(() => {
       // 接收帧同步开始通知，处理游戏逻辑
       cc.log('SDK广播---开启帧同步');
-      cc.director.loadScene('Game2');
+      cc.director.loadScene('Game');
     });
   }
 }

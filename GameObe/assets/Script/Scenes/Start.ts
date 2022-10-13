@@ -14,11 +14,36 @@
  *  limitations under the License.
  */
 
+import Global from "../Global";
+
 const { ccclass } = cc._decorator;
 
 @ccclass
 export default class Start extends cc.Component {
   goToGame() {
-    cc.director.loadScene('Hall');
+    cc.director.loadScene('Game');
+  }
+
+  initSDK(){
+    const client = new window.GOBE.Client({
+      appId: Global.appId, // 应用ID
+      openId: Global.openId, // 玩家ID，区别不同用户
+      clientId: Global.clientId, // 客户端ID
+      clientSecret: Global.clientSecret, // 客户端密钥
+    });
+    client
+      .init()
+      .then((client) => {
+        // 初始化成功
+        cc.log('init sdk success');
+        Global.client = client;
+        Global.playerId = client.playerId;
+        // 切换RoomEntry场景
+        cc.director.loadScene('RoomEntry');
+      })
+      .catch((e) => {
+        // 初始化失败
+        cc.log('init sdk fail,errName:' + e);
+      });
   }
 }

@@ -39,6 +39,7 @@ export default class Boomerang extends cc.Component {
   init(): void {
     this.flyDirection = this.node.parent.name === 'p1' ? 1 : -1;
     this.node.x = this.flyDirection * 300;
+	this.node.y = 0;
     this.rBody.linearVelocity = new cc.Vec2(this.flySpeed * this.flyDirection, 0);
   }
 
