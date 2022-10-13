@@ -6,7 +6,7 @@ These are the available plugins in this repository.
 | Demo | Version | Documentation |
 |--------|-----|-----|
 | [GameAnalytics](./GameAnalytics) | [![version](https://img.shields.io/badge/Release-1.1.1.300-yellow)](./GameAnalytics) | [Getting Started](To be update by developer docs link) <br/> [API Reference](To be update by developer  api docs link) |
-| [GameOBE](./GameOBE) | [![version](https://img.shields.io/badge/Release-1.1.1.300-yellow)](./GameOBE) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-introduction-0000001185429290) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/gameobe-overview-js-0000001237750607) |
+| [GameObe](./GameObe) | [![version](https://img.shields.io/badge/Release-1.1.8.300-yellow)](./GameObe) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/gameobe-introduction-0000001185429290) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/gameobe-overview-js-0000001237750607) |
 ## Precautions
 The PGS-CodeLab-Demos project contains 4 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
 
