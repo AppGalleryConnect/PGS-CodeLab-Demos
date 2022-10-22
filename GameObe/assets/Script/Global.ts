@@ -27,9 +27,9 @@ export default class Global {
   public static gameWin = false;
 
   // GameOBE project info
-  public static appId = '105109409';
-  public static clientId = '718776077425573888';
-  public static clientSecret = 'AB6AC0CB1F7CA34195C2E44487C50F32132548BA64291C20B536D1D7A39A33EA';
+  public static appId = '1*******9';
+  public static clientId = '71*************888';
+  public static clientSecret = 'AB*******************************************************39A33EA';
 
   // GameOBE
   public static client: Client = null;
