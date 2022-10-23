@@ -87,19 +87,6 @@
             android:text="@string/initGMMESdk"/>
 
         <Button
-            android:id="@+id/createRoomTv"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="32dp"
-            android:background="@mipmap/btn_gmme_bg"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:layout_marginHorizontal="10dp"
-            android:textStyle="bold"
-            android:text="@string/create_room" />
-
-        <Button
             android:id="@+id/joinRoomTv"
             android:layout_width="0dp"
             android:layout_weight="1"

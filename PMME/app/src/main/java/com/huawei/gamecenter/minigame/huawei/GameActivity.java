@@ -90,9 +90,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private EditText openIdEt; // 用于输入自定义玩家ID
     public static EditText roomIdEt; // 用于输入或显示房间Id
     private TextView initTv;  // 点击调用初始化方法
-    private TextView createRoomTv; // 点击调用创建房间方法
     private TextView joinRoomTv; // 点击调用加入房间方法
-    private boolean isInit; // 是否初始化标识
     private GameMediaEngine mMediaEngine;
     // 权限数组
     private final String[] permissions = new String[]{Manifest.permission.RECORD_AUDIO};
@@ -189,11 +187,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         openIdEt = findViewById(R.id.openIdEt);
         roomIdEt = findViewById(R.id.roomIdEt);
         initTv = findViewById(R.id.initTv);
-        createRoomTv = findViewById(R.id.createRoomTv);
         joinRoomTv = findViewById(R.id.joinRoomTv);
 
         initTv.setOnClickListener(this);
-        createRoomTv.setOnClickListener(this);
         joinRoomTv.setOnClickListener(this);
 
         initPermissions();
@@ -248,18 +244,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.initTv) { // 调用初始化方法
             String openId = openIdEt.getText().toString();
             if (TextUtils.isEmpty(openId)) {
-                showToast(getResources().getString(R.string.openIdHint));
+                showToast("请输入opendId");
                 return;
             }
             mMediaEngine = GMMESdkUtil.initGMMESDK(openId, GameActivity.this);
-        } else if (v.getId() == R.id.createRoomTv) { // 调用创建房间方法
-            if (ConfigFile.GMMSDK_IS_INIT) {
-                mMediaEngine.joinTeamRoom("");
-            }
         } else if (v.getId() == R.id.joinRoomTv) { // 调用加入房间方法
             String roomId = roomIdEt.getText().toString();
             if (TextUtils.isEmpty(roomId)) {
-                showToast(getResources().getString(R.string.roomIdHint));
+                showToast("请输入roomId");
                 return;
             }
             if (ConfigFile.GMMSDK_IS_INIT) {

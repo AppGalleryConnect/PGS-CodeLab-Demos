@@ -97,22 +97,12 @@ public class GMMESdkUtil {
             gameActivity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    String tempRoomId = GameActivity.roomIdEt.getText().toString();
                     if (MyCustomCode.RESPONSE_SUCCESS.getCode() == code) {
                         mMediaEngine.enableSpeakersDetection(roomId, 1000);
                         Log.e(TAG, "enableSpeakersDetection方法已调用");
-                        if (TextUtils.isEmpty(tempRoomId)) {
-                            GameActivity.showToast(mContext.getResources().getString(R.string.create_room_success));
-                            GameActivity.roomIdEt.setText(roomId);
-                        } else {
-                            GameActivity.showToast(mContext.getResources().getString(R.string.join_room_success));
-                        }
+                        GameActivity.showToast("成功加入房间");
                     } else {
-                        if (TextUtils.isEmpty(tempRoomId)) {
-                            GameActivity.showToast(mContext.getResources().getString(R.string.create_room_failed) + ", code = " + code + ", msg = " + msg);
-                        } else {
-                            GameActivity.showToast(mContext.getResources().getString(R.string.join_room_failed) + ", code = " + code + ", msg = " + msg);
-                        }
+                        GameActivity.showToast("加入房间失败" + ", code = " + code + ", msg = " + msg);
                     }
                 }
             });
@@ -145,7 +135,7 @@ public class GMMESdkUtil {
                         sb.append(", ");
                     }
                 }
-                sb.append(mContext.getResources().getString(R.string.talking));
+                sb.append(" 在发言");
                 Log.i(TAG, "--------onSpeakersDetection--------->" + sb.toString());
                 gameActivity.runOnUiThread(new Runnable() {
                     @Override
